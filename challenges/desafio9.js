@@ -4,5 +4,5 @@ db.produtos.find(
       $elemMatch: { tipo: "calorias", quantidade: { $lt: 500 } },
     },
   },
-  { _id: false, nome: true }
+  { _id: false, nome: true },
 );
